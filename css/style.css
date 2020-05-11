@@ -10,6 +10,11 @@ body {
 	font-family: sans-serif;
 }
 
+.top {
+	height: 5px;
+	background: linear-gradient(to right, #009688, #303F9F);
+}
+
 .info {
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
