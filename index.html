@@ -8,20 +8,153 @@
 	<meta name="theme-color" content="#52575d" />
 </head>
 <body>
-	<div class="top"></div>
-	<div class="info">
-		<h1>Projects</h1>
-		<a href="/projects/flags">Flag finder</a>
-		<a href="/projects/brainfuck-interpreter">Brainfuck interpreter</a>
-		<a href="/projects/password-gen">Simple password generator (for desktops only!)</a>
+	<h1>Hi!<br>This is Igor Siluianov's home page</h1>
 
-		<div class="cat-wrapper">
-			<div class="cat">
+	<div class="info-block">
+		<h2 class="info-block__title">My Contacts</h2>
+
+		<div class="contacts">
+			<a class="contacts__item" href="https://github.com/blrop" target="_blank">
+				<img src="images/github.svg" alt="Github">
+				<span class="contacts__item-title">Github</span>
+			</a>
+			<a class="contacts__item" href="https://www.linkedin.com/in/igor-siluianov-59384781/" target="_blank">
+				<img src="images/linkedin.svg" alt="LinkedIn">
+				<span class="contacts__item-title">LinkedIn</span>
+			</a>
+			<a class="contacts__item" href="https://www.facebook.com/olvin.hh" target="_blank">
+				<img src="images/facebook.svg" alt="Facebook">
+				<span class="contacts__item-title">Facebook</span>
+			</a>
+			<a class="contacts__item" href="https://vk.com/olvin_hh" target="_blank">
+				<img src="images/vk.svg" alt="vk">
+				<span class="contacts__item-title">vk</span>
+			</a>
+			<a class="contacts__item" href="https://www.instagram.com/olvin_hh/" target="_blank">
+				<img src="images/instagram.svg" alt="Instagram">
+				<span class="contacts__item-title">Instagram</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="info-block">
+		<h2 class="info-block__title">My Projects</h2>
+
+		<div class="project-item">
+			<div class="project-title">
+				Activities calendar
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">App for tracking everyday activities and see those history</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="https://activities-calendar.herokuapp.com/" class="hi" target="_blank">Demo</a><br>Heroku's server warm up needs some time
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="https://github.com/blrop/activities-calendar" class="hi" target="_blank">Source</a>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Complexity:</div>
+				<div class="project-info__content">***</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Used technologies:</div>
+				<div class="project-info__content">Node.js, MySQL, React, JavaScript</div>
+			</div>
+		</div>
+
+		<div class="project-item">
+			<div class="project-title">
+				Flag finder
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">Find a flag of a country via its properties</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="/projects/flags" class="hi" target="_blank">Demo</a>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="https://github.com/blrop/flags" class="hi" target="_blank">Source</a>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Complexity:</div>
+				<div class="project-info__content">**</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Used technologies:</div>
+				<div class="project-info__content">React, TypeScript</div>
+			</div>
+		</div>
+
+		<div class="project-item">
+			<div class="project-title">
+				Brainfuck interpreter
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">Write a program in <a href="https://en.wikipedia.org/wiki/Brainfuck" target="_blank">Brainfuck</a> and see its interactive execution</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="/projects/brainfuck-interpreter" class="hi" target="_blank">Demo</a>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="https://github.com/blrop/brainfuck-interpreter" class="hi" target="_blank">Source</a>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Complexity:</div>
+				<div class="project-info__content">**</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Used technologies:</div>
+				<div class="project-info__content">Vue.js, JavaScript</div>
+			</div>
+		</div>
+
+		<div class="project-item">
+			<div class="project-title">
+				Password generator
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">For desktops only! Generate a password of any complexity and length via single mouse wave.</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="/projects/password-gen" class="hi" target="_blank">Demo</a>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__content">
+					<a href="https://github.com/blrop/password-gen" class="hi" target="_blank">Source</a>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Complexity:</div>
+				<div class="project-info__content">*</div>
+			</div>
+			<div class="project-info">
+				<div class="project-info__head">Used technologies:</div>
+				<div class="project-info__content">Vue.js, JavaScript</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="info-block">
+		<div class="ascii-art">
  _._     _,-'""`-._
 (,-.`._,'(       |\`-/|
     `-.-' \ )-`( , o o)
           `-    \`_`"'-
-			</div>
 		</div>
 	</div>
 </body>
