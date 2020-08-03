@@ -10,6 +10,7 @@ body {
 	background: #2d2d2d;
 	color: var(--main-color);
 	padding: 20px;
+	margin: 0;
 }
 
 h1 {
@@ -64,10 +65,14 @@ a.hi:focus:after {
 	width: 100%;
 }
 
+.content {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
 .info-block {
 	padding: 10px 0;
 	margin: 10px 0;
-	max-width: 500px;
 	border-bottom: 1px solid var(--main-color-dim);
 }
 
@@ -99,7 +104,7 @@ a.hi:focus:after {
 }
 
 .contacts__item img {
-	width: 32px;
+	height: 32px;
 	display: block;
 	margin-bottom: 10px;
 }
@@ -125,7 +130,6 @@ a.hi:focus:after {
 	align-items: center;
 	font-size: 14px;
 	margin-bottom: 10px;
-	margin-left: 20px;
 	color: var(--main-color-dim);
 }
 
