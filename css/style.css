@@ -44,7 +44,6 @@ a.hi {
 	text-decoration: none;
 	position: relative;
 	color: var(--highlight-color);
-	outline: none;
 	white-space: nowrap;
 }
 
@@ -103,7 +102,8 @@ a.hi:focus:after {
 	background: #222;
 }
 
-.contacts__item img {
+.contacts__item svg {
+	width: 32px;
 	height: 32px;
 	display: block;
 	margin-bottom: 10px;
