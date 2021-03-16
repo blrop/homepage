@@ -1,6 +1,6 @@
 :root {
 	--main-color: #cfd2d6;
-	--main-color-dim: #828282;
+	--main-color-dim: #a5a5a5;
 	--highlight-color: #55ffc9;
 	--block-bg-color: #333;
 }
@@ -59,8 +59,7 @@ a.hi:after {
 	background: var(--highlight-color);
 }
 
-a.hi:hover:after,
-a.hi:focus:after {
+a.hi:hover:after {
 	width: 100%;
 }
 
