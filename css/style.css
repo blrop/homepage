@@ -69,9 +69,7 @@ a.hi:hover:after {
 }
 
 .info-block {
-	padding: 10px 0;
 	margin: 10px 0;
-	border-bottom: 1px solid var(--main-color-dim);
 }
 
 .info-block:last-of-type {
@@ -79,6 +77,10 @@ a.hi:hover:after {
 }
 
 .info-block__title {
+	margin-top: 30px;
+}
+
+.info-block__title--contacts {
 	margin-top: 0;
 }
 
@@ -113,7 +115,7 @@ a.hi:hover:after {
 }
 
 .project-item {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding: 10px;
 	background: var(--block-bg-color);
 }
