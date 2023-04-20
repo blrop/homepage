@@ -141,10 +141,6 @@ a.hi:hover:after {
 
 }
 
-.bottom-info {
-	font-size: 11px;
-}
-
 @media(max-width: 500px) {
 	body {
 		padding: 5px;
