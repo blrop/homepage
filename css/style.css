@@ -161,3 +161,8 @@ a.hi:hover:after {
 		display: none;
 	}
 }
+
+#title2 .item.glow {
+	color: #fffb55;
+	text-shadow: 0 0 8px #fff905;
+}
