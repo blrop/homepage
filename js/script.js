@@ -1,4 +1,4 @@
-const message = 'What are you looking for? Easter eggs? Try clicking on the title!';
+const message = 'If you are looking for easter eggs, try clicking on the title';
 console.log(`%c${message}`, 'color: #55ffc9; background: #333; padding: 8px 15px; font-size: 16px; border-radius: 5px');
 
 const ANIMATION_TIMEOUT = 100;
