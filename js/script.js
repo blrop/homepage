@@ -2,8 +2,20 @@ const message = 'If you are looking for easter eggs, try clicking on the title';
 console.log(`%c${message}`, 'color: #55ffc9; background: #333; padding: 8px 15px; font-size: 16px; border-radius: 5px');
 
 const ANIMATION_TIMEOUT = 100;
+const FULL_GLOW_WAIT_ITERATION_COUNT = 15;
+
+let interval;
 
 const makeRunningAnimation = ($textElement) => {
+    if (interval) {
+        clearInterval(interval);
+        interval = null;
+
+        // noinspection SillyAssignmentJS
+        $textElement.textContent = $textElement.textContent; // replace inner html structure by simple text
+        return;
+    }
+
     const subItemClass = 'item';
     const glowClass = 'glow';
 
@@ -17,7 +29,8 @@ const makeRunningAnimation = ($textElement) => {
 
     let filledCount = 0;
     let runningPosition = $innerItems.length;
-    setInterval(() => {
+    let fullGlowWaitIteration = 0;
+    interval = setInterval(() => {
         if (runningPosition >= (filledCount + 1)) {
             if (runningPosition < $innerItems.length) {
                 $innerItems[runningPosition].classList.remove(glowClass);
@@ -29,11 +42,17 @@ const makeRunningAnimation = ($textElement) => {
             filledCount++;
         }
         if (filledCount > ($innerItems.length - 1)) {
-            $innerItems.forEach(($item) => {
-                $item.classList.remove(glowClass);
-            });
-            filledCount = 0;
-            runningPosition = $innerItems.length - 1;
+            if (fullGlowWaitIteration < FULL_GLOW_WAIT_ITERATION_COUNT) {
+                fullGlowWaitIteration++; // wait several iterations when full glow reached
+            } else {
+                fullGlowWaitIteration = 0;
+
+                $innerItems.forEach(($item) => {
+                    $item.classList.remove(glowClass);
+                });
+                filledCount = 0;
+                runningPosition = $innerItems.length - 1;
+            }
         }
     }, ANIMATION_TIMEOUT);
 };
